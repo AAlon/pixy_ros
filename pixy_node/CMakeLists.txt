@@ -1,6 +1,7 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(pixy_node)
 
+set(PIXY_NODE_SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR})
 add_subdirectory(pixysdk)
 find_package(catkin REQUIRED COMPONENTS actionlib_msgs message_generation rospy std_msgs)
 
@@ -26,8 +27,8 @@ install(
 #  DESTINATION ${CATKIN_PACKAGE_BIN_DESTINATION}
 #)
 
-install(DIRECTORY
-  config
-  launch
-  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
-)
+#install(DIRECTORY
+#  config
+#  launch
+#  DESTINATION ${CATKIN_PACKAGE_SHARE_DESTINATION}
+#)
