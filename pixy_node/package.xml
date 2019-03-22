@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>pixy_node</name>
+  <version>0.1.0</version>
+  <description>Pixy</description>
+  <url>http://wiki.ros.org/pixy_node</url>
+
+  <author email="ros-contributions@amazon.com">AWS RoboMaker</author>
+  <maintainer email="ros-contributions@amazon.com">AWS RoboMaker</maintainer>
+
+  <license>Apache 2.0</license>
+
+  <buildtool_depend>cmake</buildtool_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+
+  <build_depend condition="$ROS_VERSION == 1">catkin</build_depend>
+  <build_depend>ros_environment</build_depend>
+
+  <depend>rospy</depend>
+  <depend>message_generation</depend>
+  <depend>std_msgs</depend>
+  <depend>message_runtime</depend>
+
+  <depend>swig</depend>
+  <depend>libusb-1.0-dev</depend>
+  <depend>g++</depend>
+  <depend>boost</depend>
+
+  <export>
+    <build_type>catkin</build_type>
+  </export>
+</package>

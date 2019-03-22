@@ -1,0 +1,5 @@
+#!/bin/bash
+INSTALL_PREFIX=$1
+#mkdir -p $INSTALL_PREFIX/lib
+cp -rn $INSTALL_PREFIX/src/build/libpixyusb_swig/* $INSTALL_PREFIX/lib
+cp -rn $INSTALL_PREFIX/src/build/libpixyusb_swig/* $INSTALL_PREFIX/../../src/pixy_node/src/pixy_node

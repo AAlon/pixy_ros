@@ -1,0 +1,6 @@
+#!/usr/bin/env python
+
+import pixy_node.pixy_node
+
+if __name__ == '__main__':
+    pixy_node.pixy_node.pixy_node()
