@@ -23,7 +23,7 @@
 
   <depend>swig</depend>
   <depend>libusb-1.0-dev</depend>
-  <depend>g++</depend>
+  <depend>g++-static</depend>
   <depend>boost</depend>
 
   <export>
