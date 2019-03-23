@@ -59,7 +59,7 @@ def pixy_node():
             print block_log
             rospy.loginfo(block_log)
 
-            angle = get_degrees(blocks[index].x, blocks[index].y)
+            angle = get_angle(blocks[index].x, blocks[index].y)
             angles.append(angle)
             if angles.is_saturated():
                 angle_publisher.publish(int(angles.avg()))
